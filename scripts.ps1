@@ -16,8 +16,8 @@ cd apigee-X-KVM
  
 
 # Read JSON files
-jsonFiles = apiconfig/env/eval/kvms.json -Recurse
-jsonContent = Get-Content -Path $jsonFiles -Raw
+$jsonFiles = apiconfig/env/eval/kvms.json -Recurse
+$jsonContent = Get-Content -Path $jsonFiles -Raw
 $apiUrl = "https://apigee.googleapis.com/v1/organizations/esi-apigee-x-394004/environments/eval/keyvaluemaps"
 $headers = @{
 	"Authorization" = "Bearer $token"
