@@ -16,7 +16,7 @@ cd apigee-X-KVM
  
 
 # Read JSON files
-$filePath = = apiconfig/env/eval/kvms.json -Recurse
+$filePath = apiconfig/env/eval/kvms.json -Recurse
 $jsonContent = Get-Content -Path $filePath -Raw
 $apiUrl = "https://apigee.googleapis.com/v1/organizations/esi-apigee-x-394004/environments/eval/keyvaluemaps"
 $headers = @{
