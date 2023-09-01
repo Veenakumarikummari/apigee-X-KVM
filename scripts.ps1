@@ -5,9 +5,9 @@ $baseURL = "https://apigee.googleapis.com/v1/organizations/"
 $headers = @{Authorization = "Bearer $token"}
 
 # Set your GitHub repository information
-repositoryOwner = "veenakumari.kummari@easystepin.com"
-repositoryName = "apigee-X-KVM"
-branchName = "main"
+$repositoryOwner = "veenakumari.kummari@easystepin.com"
+$repositoryName = "apigee-X-KVM"
+$branchName = "main"
 
 # Clone the repository
 git clone https://github.com/Veenakumarikummari/apigee-X-KVM.git
