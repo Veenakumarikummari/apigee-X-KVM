@@ -20,7 +20,7 @@ jsonFiles = apiconfig/env/eval/kvms.json -Recurse
 jsonContent = Get-Content -Path jsonFiles -Raw
 $apiUrl = "https://apigee.googleapis.com/v1/organizations/esi-apigee-x-394004/environments/eval/keyvaluemaps"
 $headers = @{
-	"Authorization" = "Bearer '${{ steps.auth.outputs.access_token }}'"
+	"Authorization" = "Bearer $token"
 	"Content-Type" = "application/json"
 }
 
